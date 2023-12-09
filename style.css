@@ -1,7 +1,11 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
 body{
     /* background-color: aliceblue;*/
-    margin: 0; /*se coloca porque el navegador ya tiene un margen establecido, lo eliminamos*/
-    padding: 0; /* MODELO DE CAJAS margin es un margen externo y padding es interno, en medio se encuentra el border, de nuestra cajita (contenedor)*/
     font-size: 13px;
     font-family: arial, sans-serif;
 }
@@ -10,149 +14,173 @@ header{
     width: 100%;
     height: 60px;
 }
+
+  
 header nav{
     display: flex;
     justify-content: flex-end;
 }
 .nav-right-section{
-    width: 250px;
-    height: auto;
     display: flex;
     list-style: none;
     justify-content: center;
     align-items: center;
+    margin-top: 1rem;
 }
 a{
-    text-decoration: none;
+    text-decoration:none;
     cursor: pointer;
 }
 
 .nav-right-section a{
-    margin-right: 25px;
+    margin-right: 15px;
     color: rgb(21, 21, 21);
+    
 }
 
-nav .nav-right-section img{
+.nav-right-section img{
     border-radius: 80px;
-    width: 35px;
-    height: 35px;
+    width: 33px;
+    height: 33px;
     margin-left:20px;
 }
 
-main .main-input{
-    width: 530px;
+.main-input{
     margin:0 auto;
-    margin-bottom: 35px;
+    margin-bottom: 18px;
+    justify-content: center;
+   
+    
 }
 
-main .main-input input{
-    width: 450px;
-    height: 40px;
+.main-input input{
+    width: 80%;
+    display:flex;
+    height: 45px;
     border: none;
     outline: none;
+ 
 }
 
-main .main-input-container{
-    width: 525px;
-    border: 1px solid #dfe1e5;
-    border-radius: 100px;
+.main-input-container{
+    width: 590px;
     display:flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid #dfe1e5;
+    max-width: 50rem;
+    border-radius: 100px;
+   
+    
+    
 }
 
 
 
 
 
-nav .nav-right-section .menu-icon{
-    background-image: url('https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png');
-    width: 27px;
-    height: 27px;
+.nav-right-section .menu-icon{
+    background-image: url('https://ssl.gstatic.com/gb/images/bar/al-icon.png');
+    width: 24px;
+    height: 24px;
     background-size: contain;
     background-position: center;
     background-repeat: none;
+    color: #5f6368;
+    display:inline-block;
+    outline: none;
     
 }
 
 main{
-margin-top: 30px;
-text-align: center;
 display:flex;
 flex-direction: column;
 align-items: center;
+text-align: center;
+justify-content: center;
 }
 
-main .main-logo{
+.main-logo{
     width: 350px;
-    margin:0 auto;
+    margin:2rem auto;
     margin-bottom: 35px;
 
 }
 
-main .main-logo img{
-    width: 310px;
-    height: 110px;
+.main-logo img{
+    height: 92px;
 }
 
-main .main-input-container:hover{
+.main-input-container:hover{
     box-shadow: 0 1px 6px 0 #20212447;
 
 }
 
-main .main-input .search-icon{
-    background-image: url("https://img.icons8.com/android/24/000000/search.png");
-    width: 18px;
-    height: 18px;
-    padding-left: 25px;
+.main-input .search-icon{
+    font-size: 15px; 
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    color: #9aa0a6;
+
 }
 
-main .main-input .micro-icon{
+.main-input .micro-icon{
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png");
-    width: 18px;
-    height: 18px;
-    padding-left: 5px;
+    width: 24px;
+    display:flex;
+    align-items: center;
+    border:0;
+    height: 20px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    cursor:pointer;
+    margin: 10px;
+    line-height: 44px;
 }
 
-main .main-input .cam-icon{
-    background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQU9EB56qp8B5qgt89OtkGpN86KFafBM7cBixk1nXOs7ukEVbJE");
-    width: 18px;
-    height: 18px;
+.main-input .cam-icon{
+    background-image: url("https://lh3.googleusercontent.com/H65Hxq0ooUCcwhoRGU-fwoXqrGS58mwa2vtr2ZfhGgJzMU0uYybOrZVBs8jydtR22TRC1k9XwDMD2xHB5BBU4IyXW7oH8PyCsq46uX6A42CmXP5GDZ2d");
+    height: 20px;
     padding-right: 30px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    line-height: 44px;
 }
 
-main .main-buttons{
+.main-buttons{
     width: 530px;
     margin: 0 auto;
-
+ 
 }
 
-main .main-buttons div{
-    display:inline-block
+
+.main-buttons div{
+    display:inline-block;
 }
 
-main .main-buttons button{
-    height: 36px;
-    border:none;
+
+.main-buttons button{
     background-color: #f8f9fa;
-    font-size: 14px;
-    color: #5f6368;
+    border: 1px solid #f8f9fa;
     border-radius: 6px;
-    padding: 0 15px;
-    margin-right: 12px;
-    
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
 }
 
-main .main-buttons button:hover{ 
+
+.main-buttons button:hover{ 
  border: 1px solid #c6c6c6; 
  box-shadow: 0 0.5px 1px 0 #000001;
  cursor: pointer;
@@ -166,7 +194,8 @@ main .main-buttons button:hover{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    font-size: 15px;
+    font-size: 14px;
+    font-family: arial,sans-serif;
     border-top:1px solid #e4e4e4;
    
  }
@@ -178,19 +207,25 @@ main .main-buttons button:hover{
     padding-left: 0;
  }
  footer ul li{
-    margin-left: 10px;
+    margin-left: 30px;
   
  }
 
  footer .footer-left{
-    justify-content: left;
+    margin-left: 3px;
+    
  }
 
  footer .footer-right{
     justify-content: right;
+    padding-right: 10px;
+    
  }
 
  footer a{
     color:#202124;
     font-family: arial,sans-serif;
+    font-size: 14px;
+    
+    
 }
